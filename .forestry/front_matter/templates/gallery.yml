@@ -8,3 +8,5 @@ fields:
 - type: image_gallery
   name: stills
   label: stills
+pages:
+- index.html
