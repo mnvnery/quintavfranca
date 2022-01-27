@@ -38,3 +38,5 @@ fields:
     schema:
       format: html-blocks
   label: Futuro
+pages:
+- _data/sobre.yml
