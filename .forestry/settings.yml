@@ -8,10 +8,10 @@ sections:
   path: index.html
   label: Gallery
 - type: document
-  path: sobre.yml
+  path: _data/sobre.yml
   label: Sobre
 - type: document
-  path: detalhes.yml
+  path: _data/detalhes.yml
   label: Detalhes
 - type: document
   path: _data/contactos.yml
