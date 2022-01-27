@@ -12,3 +12,12 @@ fields:
   config:
     required: false
   label: Telefone
+- name: morada
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Morada
