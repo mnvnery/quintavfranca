@@ -1,0 +1,88 @@
+---
+layout: default
+stills:
+    - assets/img/img2.jpeg
+    - assets/img/img3.jpeg
+    - assets/img/img4.jpeg
+    - assets/img/img5.jpeg
+    - assets/img/img6.jpeg
+    - assets/img/img7.jpeg
+    - assets/img/img8.jpeg
+    - assets/img/img9.jpeg
+    - assets/img/img10.jpeg
+    - assets/img/img11.jpeg
+    - assets/img/img12.jpeg
+    - assets/img/img13.jpeg
+    - assets/img/img14.jpeg
+    - assets/img/img15.jpeg
+    - assets/img/img16.jpeg
+    - assets/img/img17.jpeg
+    - assets/img/img18.jpeg
+    - assets/img/img19.jpeg
+    - assets/img/img20.jpeg
+    - assets/img/img21.jpeg
+    - assets/img/img22.webp
+    - assets/img/img23.jpeg
+    - assets/img/img24.jpeg
+    - assets/img/img25.jpeg
+    - assets/img/img26.jpeg
+    - assets/img/img27.jpeg
+    - assets/img/img28.jpeg
+    - assets/img/img29.jpeg
+    - assets/img/img30.jpeg
+    - assets/img/img31.jpeg
+
+---
+<div class="logo">
+    <img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo">
+</div>
+
+<div class="separator my-4"></div>
+
+<div class="d-flex justify-content-between items-center m-3">
+    <h6>SOBRE</h6>
+    <h6>CONTACTOS</h6>
+    <h6>DETALHES</h6>
+    <h6>RESERVAS</h6>
+    <div class="languages">
+        <h6 class="en">EN</h6>
+        <h6>PT</h6>
+    </div>
+</div>
+
+<div class="photo-carousel">
+    {% for item in page.stills %}
+        <div class="carousel-cell"><img src="{{ site.baseurl }}/{{ item }}"/></div>
+    {% endfor %}
+</div>
+<div class="d-flex justify-content-center mt-3 d-lg-none">
+    <p class="button--previous-wrapped">prev</p>
+    <p class="mx-4">/</p>
+    <p class="button--next-wrapped">next</p>
+</div>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+$('.photo-carousel').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    pageDots: false,
+    wrapAround: true,
+    prevNextButtons: true,
+    arrowShape: { 
+        x0: 10,
+        x1: 60, y1: 50,
+        x2: 60, y2: 40,
+        x3: 20
+    },
+});
+var $carousel = $('.photo-carousel').flickity();
+
+$('.button--next-wrapped').on( 'click', function() {
+    $carousel.flickity( 'next', true );
+});
+$('.button--previous-wrapped').on( 'click', function() {
+    $carousel.flickity( 'previous', true );
+});
+</script>

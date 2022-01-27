@@ -1,0 +1,35 @@
+@font-face { font-family: JoulesetJaques; src: url("../fonts/JoulesetJaquesSerif-Bold.woff") format("woff"); }
+
+@font-face { font-family: 'HK Grotesk'; font-style: normal; font-weight: 200; src: url("../fonts/HKGrotesk-Regular.woff") format("woff"); }
+
+@font-face { font-family: 'HK Grotesk'; font-style: normal; font-weight: 700; src: url("../fonts/HKGrotesk-SemiBold.woff") format("woff"); }
+
+body { background-color: #F5F3ED; font-style: 'HK Grotesk', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: JoulesetJaques, sans-serif; }
+
+.logo { max-width: 55%; margin: 1em auto; }
+
+.languages { position: absolute; top: 40px; right: 15px; display: flex; flex-direction: column; }
+
+.en { padding-bottom: 8px; border-bottom: solid 1px black; }
+
+.separator { border-bottom: 1px solid black; }
+
+.photo-carousel .carousel-cell { height: 40vh; margin-right: 10px; display: flex; justify-content: center; align-items: center; }
+
+.photo-carousel { margin-top: 10vh; }
+
+.photo-carousel .carousel-cell img { max-height: 40vh; }
+
+.flickity-button-icon { display: none; }
+
+.photo-carousel .flickity-prev-next-button { height: 100% !important; background: transparent !important; border-radius: 0 !important; width: 20vw; }
+
+.photo-carousel .flickity-prev-next-button.previous:hover { cursor: url("../img/arrow-left-line.svg"), auto; }
+
+.photo-carousel .flickity-prev-next-button.next:hover { cursor: url("../img/arrow-right-line.svg"), auto; }
+
+@media screen and (min-width: 600px) { .photo-carousel .flickity-prev-next-button { width: 40vw; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+.photo-carousel 
+    .carousel-cell 
+        height: 40vh
+        margin-right: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+
+.photo-carousel
+    margin-top: 10vh
+
+.photo-carousel
+    .carousel-cell img
+        max-height: 40vh
+
+.flickity-button-icon
+    display: none
+
+.photo-carousel 
+    .flickity-prev-next-button
+        height: 100% !important
+        background: transparent !important
+        border-radius: 0 !important
+        width: 20vw
+
+.photo-carousel 
+    .flickity-prev-next-button.previous:hover
+        cursor: url('../img/arrow-left-line.svg'), auto
+
+.photo-carousel 
+    .flickity-prev-next-button.next:hover
+        cursor: url('../img/arrow-right-line.svg'), auto	
+
+@media screen and (min-width: 600px) 
+    .photo-carousel 
+        .flickity-prev-next-button
+            width: 40vw 

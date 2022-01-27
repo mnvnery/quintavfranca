@@ -1,0 +1,28 @@
+title: Quinta de Villa Franca
+email: quintavfranca@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Casa de férias localizada no centro da cidade do Peso da Régua. Possui 7 quartos, 3 casas de banho, jardim e piscina privativa.
+baseurl: "/qvf"  # the subpath of your site, e.g. /blog
+url: "https://mnvnery.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Build settings
+permalink: pretty 
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

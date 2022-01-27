@@ -1,0 +1,26 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.sass",
+		"_sass/main.sass",
+		"_sass/0-base/dir-base.sass",
+		"_sass/0-base/style.sass",
+		"_sass/1-modules/dir-modules.sass",
+		"_sass/1-modules/navbar.sass",
+		"_sass/1-modules/carousel.sass",
+		"_sass/2-layouts/dir-layouts.sass"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"@import \"0-base/dir-base\";\n@import \"1-modules/dir-modules\";\n@import \"2-layouts/dir-layouts\";\n\n",
+		"@import \"style\";\n",
+		"$beige: #F5F3ED;\n$yellow: #E0AF29;\n@font-face {\n    font-family: JoulesetJaques;\n    src: url(\"../fonts/JoulesetJaquesSerif-Bold.woff\") format(\"woff\"); }\n\n@font-face {\n    font-family: 'HK Grotesk';\n    font-style: normal;\n    font-weight: 200;\n    src: url('../fonts/HKGrotesk-Regular.woff') format('woff'); }\n\n@font-face {\n    font-family: 'HK Grotesk';\n    font-style: normal;\n    font-weight: 700;\n    src: url('../fonts/HKGrotesk-SemiBold.woff') format('woff'); }\n\n\nbody {\n    background-color: $beige;\n    font-style: 'HK Grotesk', sans-serif; }\n\nh1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {\n    font-family: JoulesetJaques, sans-serif; }\n",
+		"@import 'navbar';\n@import 'carousel';\n",
+		".logo {\n    max-width: 55%;\n    margin: 1em auto; }\n\n\n.languages {\n    position: absolute;\n    top: 40px;\n    right: 15px;\n    display: flex;\n    flex-direction: column; }\n\n.en {\n    padding-bottom: 8px;\n    border-bottom: solid 1px black; }\n\n.separator {\n    border-bottom: 1px solid black; }\n",
+		".photo-carousel {\n    .carousel-cell {\n        height: 40vh;\n        margin-right: 10px;\n        display: flex;\n        justify-content: center;\n        align-items: center; } }\n\n.photo-carousel {\n    margin-top: 10vh; }\n\n.photo-carousel {\n    .carousel-cell img {\n        max-height: 40vh; } }\n\n.flickity-button-icon {\n    display: none; }\n\n.photo-carousel {\n    .flickity-prev-next-button {\n        height: 100% !important;\n        background: transparent !important;\n        border-radius: 0 !important;\n        width: 20vw; } }\n\n.photo-carousel {\n    .flickity-prev-next-button.previous:hover {\n        cursor: url('../img/arrow-left-line.svg'), auto; } }\n\n.photo-carousel {\n    .flickity-prev-next-button.next:hover {\n        cursor: url('../img/arrow-right-line.svg'), auto; } }\n\n@media screen and (min-width: 600px) {\n    .photo-carousel {\n        .flickity-prev-next-button {\n            width: 40vw; } } }\n",
+		""
+	],
+	"names": [],
+	"mappings": "AGEA,UAAU,GACN,WAAW,EAAE,cAAc,EAC3B,GAAG,EAAE,6CAA6C,CAAC,cAAc;;AAErE,UAAU,GACN,WAAW,EAAE,YAAY,EACzB,UAAU,EAAE,MAAM,EAClB,WAAW,EAAE,GAAG,EAChB,GAAG,EAAE,sCAAsC,CAAC,cAAc;;AAE9D,UAAU,GACN,WAAW,EAAE,YAAY,EACzB,UAAU,EAAE,MAAM,EAClB,WAAW,EAAE,GAAG,EAChB,GAAG,EAAE,uCAAuC,CAAC,cAAc;;AAG/D,AAAA,IAAI,CAAC,EACD,gBAAgB,EApBZ,OAAO,EAqBX,UAAU,EAAE,wBAAwB,GAAG;;AAE3C,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE,GAAG,CAAC,EACjD,WAAW,EAAE,0BAA0B,GAAG;;AExB9C,AAAA,KAAK,CAAC,EACF,SAAS,EAAE,GAAG,EACd,MAAM,EAAE,QAAQ,GAAG;;AAGvB,AAAA,UAAU,CAAC,EACP,QAAQ,EAAE,QAAQ,EAClB,GAAG,EAAE,IAAI,EACT,KAAK,EAAE,IAAI,EACX,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,GAAG;;AAE7B,AAAA,GAAG,CAAC,EACA,cAAc,EAAE,GAAG,EACnB,aAAa,EAAE,eAAe,GAAG;;AAErC,AAAA,UAAU,CAAC,EACP,aAAa,EAAE,eAAe,GAAG;;ACjBrC,AACI,eADW,CACX,cAAc,CAAC,EACX,MAAM,EAAE,IAAI,EACZ,YAAY,EAAE,IAAI,EAClB,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,MAAM,EACvB,WAAW,EAAE,MAAM,GAAG;;AAE9B,AAAA,eAAe,CAAC,EACZ,UAAU,EAAE,IAAI,GAAG;;AAEvB,AACI,eADW,CACX,cAAc,CAAC,GAAG,CAAC,EACf,UAAU,EAAE,IAAI,GAAG;;AAE3B,AAAA,qBAAqB,CAAC,EAClB,OAAO,EAAE,IAAI,GAAG;;AAEpB,AACI,eADW,CACX,0BAA0B,CAAC,EACvB,MAAM,EAAE,eAAe,EACvB,UAAU,EAAE,sBAAsB,EAClC,aAAa,EAAE,YAAY,EAC3B,KAAK,EAAE,IAAI,GAAG;;AAEtB,AACI,eADW,CACX,0BAA0B,AAAA,SAAS,CAAC,KAAK,CAAC,EACtC,MAAM,EAAE,iCAAiC,EAAE,IAAI,GAAG;;AAE1D,AACI,eADW,CACX,0BAA0B,AAAA,KAAK,CAAC,KAAK,CAAC,EAClC,MAAM,EAAE,kCAAkC,EAAE,IAAI,GAAG;;AAE3D,MAAM,8BAEE,GADJ,AACI,eADW,CACX,0BAA0B,CAAC,EACvB,KAAK,EAAE,IAAI,GAAG,EAAA"
+}
