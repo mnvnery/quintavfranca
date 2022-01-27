@@ -24,6 +24,10 @@ fields:
     schema:
       format: html-blocks
   label: Passado
+- name: imagens_passado
+  type: image_gallery
+  config: {}
+  label: Imagens Passado
 - name: presente
   type: textarea
   default: ''
