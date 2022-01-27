@@ -11,6 +11,10 @@ fields:
     schema:
       format: html-blocks
   label: Lugar
+- name: imagens_lugar
+  type: image_gallery
+  config: {}
+  label: Imagens Lugar
 - name: passado
   type: textarea
   default: ''
