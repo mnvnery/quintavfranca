@@ -10,15 +10,12 @@ sections:
 - type: document
   path: sobre.yml
   label: Sobre
-  match: "**/*"
 - type: document
   path: detalhes.yml
   label: Detalhes
-  match: "**/*"
 - type: document
   path: _data/contactos.yml
   label: Contactos
-  match: "**/*"
 upload_dir: assets/img
 public_path: assets/img
 front_matter_path: ''
