@@ -7,11 +7,16 @@ fields:
   config:
     required: false
   label: Email
-- name: telefone
+- name: telefone_susana
   type: text
   config:
     required: false
-  label: Telefone
+  label: Telefone Susana
+- name: telefone_cristina
+  type: text
+  config:
+    required: false
+  label: Telefone Cristina
 - name: morada
   type: textarea
   default: ''
