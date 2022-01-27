@@ -21,6 +21,9 @@ futuro: "<p>O projeto de partilha ao público da QVF é um arranque para um futu
   em breve.</p>"
 imagens_lugar:
 - assets/img/scan-2.png
-imagens_passado: []
-imagens_presente: []
+imagens_passado:
+- assets/img/scan-4.png
+- assets/img/scan-3.png
+imagens_presente:
+- assets/img/scan-6.png
 imagens_futuro: []
