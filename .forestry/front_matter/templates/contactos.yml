@@ -1,4 +1,14 @@
 ---
 label: Contactos
 hide_body: true
-fields: []
+fields:
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+- name: telefone
+  type: text
+  config:
+    required: false
+  label: Telefone
