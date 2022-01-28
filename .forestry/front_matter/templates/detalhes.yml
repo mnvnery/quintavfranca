@@ -2,7 +2,7 @@
 label: Detalhes
 hide_body: true
 fields:
-- name: geral
+- name: description
   type: textarea
   default: ''
   config:
@@ -10,4 +10,18 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
+  label: Descrição
+- name: cozinha
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Cozinha
+- name: geral
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
   label: Geral
