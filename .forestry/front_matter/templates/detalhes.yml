@@ -25,3 +25,17 @@ fields:
     min: 
     max: 
   label: Geral
+- name: exterior
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Exterior
+- name: extras
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Extras
