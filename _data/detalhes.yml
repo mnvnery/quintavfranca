@@ -17,7 +17,9 @@ geral:
 - Roupa de cama e toalhas
 - Ar condicionado
 - Wifi
-extras: []
+extras:
+- Entrega diária de pão fresco a pedido*
+- Para reservas de mais de uma semana fornecemos mudança de roupa de cama e de banho*
 exterior:
 - Estacionamento para 6 carros e acesso através de portão automático
 - Jardins com relva
@@ -27,3 +29,4 @@ exterior:
 - Espreguiçadeiras e mobiliário de exterior
 - Duas varandas
 - Piscina
+atividades: []
