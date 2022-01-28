@@ -33,21 +33,25 @@ stills:
 - assets/img/img2.jpeg
 
 ---
-<div class="logo">
-    <img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo">
+<div class="logo mobile">
+    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
 </div>
 
 <div class="separator my-4"></div>
 
-<div class="d-flex justify-content-between items-center m-3">
-    <h6>SOBRE</h6>
-    <h6>CONTACTOS</h6>
-    <h6>DETALHES</h6>
-    <h6>RESERVAS</h6>
-    <div class="languages">
-        <h6 class="en">EN</h6>
-        <h6>PT</h6>
+<div class="languages">
+    <h6 class="en">EN</h6>
+    <h6 class="pt">PT</h6>
+</div>
+
+<div class="d-flex justify-content-between align-items-center m-3 navbar">
+    <a href="#sobre" class="nav-title"><h6>SOBRE</h6></a>
+    <a href="#contactos" class="nav-title"><h6>CONTACTOS</h6></a>
+    <div class="logo desktop">
+        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
     </div>
+    <a href="#detalhes" class="nav-title"><h6>DETALHES</h6></a>
+    <h6>RESERVAS</h6>
 </div>
 
 <div class="photo-carousel">
@@ -61,12 +65,90 @@ stills:
     <p class="button--next-wrapped">next</p>
 </div>
 
+<div class="lightbox">
+    <div class="btn-close lightbox-close float-end m-3"></div>
+    <div id="sobre" class="sobre-menu lightbox-content">
+        <h4 class="lugar-title sobre-title underline">O LUGAR</h4>
+        <div class="lugar-text sobre-text show">
+            {{ site.data.sobre.lugar}}
+            <img src="{{site.baseurl}}/{{site.data.sobre.imagens_lugar}}" alt="lugar" class="sobre-img mb-2">
+        </div>
+        <div class="separator my-4"></div>
+        <h4 class="passado-title sobre-title">PASSADO</h4>
+        <div class="passado-text sobre-text">
+            {{ site.data.sobre.passado}}
+            <div class="double-img">
+                {% for img in site.data.sobre.imagens_passado %}
+                <img src="{{site.baseurl}}/{{img}}" alt="passado" class="sobre-img-double mb-2">
+                {% endfor %}
+            </div>
+        </div>
+        <div class="separator my-4"></div>
+        <h4 class="presente-title sobre-title">PRESENTE</h4>
+        <div class="presente-text sobre-text">
+            {{ site.data.sobre.presente}}
+            <img src="{{site.baseurl}}/{{site.data.sobre.imagens_presente}}" alt="presente" class="sobre-img mb-2">
+        </div>
+        <div class="separator my-4"></div>
+        <h4 class="futuro-title sobre-title">FUTURO</h4>
+        <div class="futuro-text sobre-text">
+            {{ site.data.sobre.futuro}}
+            <div class="double-img w-100 d-flex flex-wrap">
+                {% for img in site.data.sobre.imagens_futuro %}
+                <img src="{{site.baseurl}}/{{img}}" alt="futuro" class="futuro-img mb-2">
+                {% endfor %}
+            </div>
+        </div>
+        <div class="separator my-4"></div>
+    </div>
+
+    <div id="contactos" class="lightbox-content">
+        {{ site.data.contactos.email }}
+        {{ site.data.contactos.telefone_susana }}
+        {{ site.data.contactos.telefone_cristina }}
+        {{ site.data.contactos.morada }}
+    </div>
+
+    <div id="detalhes" class="lightbox-content">
+        <div>Detalhes</div>
+    </div>
+</div>
+
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>
+$('.nav-title').click(function(e) {
+  //Toggle tab link
+    $(this).addClass('underline').siblings().removeClass('underline');
+
+  //Toggle target tab
+    $($(this).attr('href')).addClass('active').siblings().removeClass('active');
+
+    if (!$('.lightbox').hasClass('open')) $('.lightbox').addClass('open');
+});
+
+
+
+$('.lightbox-close').click(function(e) {
+    $('.lightbox').removeClass('open');
+    $('.nav-title').removeClass('underline');
+});
+
+
+$(document).on('click',function(e){
+        if(!(($(e.target).closest(".lightbox").length > 0 ) || ($(e.target).closest(".nav-title").length > 0))){
+        $(".lightbox").removeClass('open');
+        $('.nav-title').removeClass('underline');
+    }
+});
+
+$('.sobre-title').click(function() {
+    $(this).next().toggleClass('show');
+    $(this).next().siblings().removeClass('show');
+    $(this).addClass('underline').siblings().removeClass('underline');
+});
+
 $('.photo-carousel').flickity({
     // options
-    cellAlign: 'center',
-    contain: true,
     pageDots: false,
     wrapAround: true,
     prevNextButtons: true,

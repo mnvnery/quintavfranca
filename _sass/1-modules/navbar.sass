@@ -16,3 +16,45 @@
 
 .separator
     border-bottom: 1px solid black
+
+.desktop
+    display: none
+
+.mobile
+    display: block
+
+
+
+@media screen and (min-width: 600px) 
+    .logo
+        max-width: 20vw
+        margin: 0
+
+    .logo img
+        width: 20vw
+
+    .languages
+        flex-direction: row
+        top: 15px
+        right: 15px
+
+    .en
+        border-bottom: none
+        border-right: 1px solid black
+        padding-right: 8px 
+        padding-bottom: 0
+
+    .pt 
+        padding-left: 8px
+
+    .separator
+        display: none
+
+    .desktop
+        display: block
+    
+    .mobile
+        display: none
+
+    .navbar
+        margin: 4vh 4vw !important
