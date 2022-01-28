@@ -40,11 +40,13 @@ fields:
     max: 
   label: Extras
 - name: atividades
-  type: list
+  type: textarea
+  default: ''
   config:
-    use_select: false
-    min: 
-    max: 
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
   label: Atividades
 pages:
 - _data/detalhes.yml
