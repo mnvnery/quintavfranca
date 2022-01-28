@@ -39,5 +39,12 @@ fields:
     min: 
     max: 
   label: Extras
+- name: atividades
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Atividades
 pages:
 - _data/detalhes.yml
