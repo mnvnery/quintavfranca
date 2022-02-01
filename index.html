@@ -37,7 +37,7 @@ stills:
     <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
 </div>
 
-<div class="separator my-4"></div>
+<div class="separator-mobile my-4"></div>
 
 <div class="languages">
     <h6 class="en">EN</h6>
@@ -46,11 +46,11 @@ stills:
 
 <div class="d-flex justify-content-between align-items-center m-3 navbar">
     <a href="#sobre" class="nav-title"><h6>SOBRE</h6></a>
-    <a href="#contactos" class="nav-title"><h6>CONTACTOS</h6></a>
+    <a href="#detalhes" class="nav-title"><h6>DETALHES</h6></a>
     <div class="logo desktop">
         <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
     </div>
-    <a href="#detalhes" class="nav-title"><h6>DETALHES</h6></a>
+    <a href="#contactos" class="nav-title"><h6>CONTACTOS</h6></a>
     <h6>RESERVAS</h6>
 </div>
 
@@ -73,7 +73,7 @@ stills:
             {{ site.data.sobre.lugar}}
             <img src="{{site.baseurl}}/{{site.data.sobre.imagens_lugar}}" alt="lugar" class="sobre-img mb-2">
         </div>
-        <div class="separator my-4"></div>
+        <div class="separator-mobile my-4"></div>
         <h4 class="passado-title sobre-title">PASSADO</h4>
         <div class="passado-text sobre-text">
             {{ site.data.sobre.passado}}
@@ -83,13 +83,13 @@ stills:
                 {% endfor %}
             </div>
         </div>
-        <div class="separator my-4"></div>
+        <div class="separator-mobile my-4"></div>
         <h4 class="presente-title sobre-title">PRESENTE</h4>
         <div class="presente-text sobre-text">
             {{ site.data.sobre.presente}}
             <img src="{{site.baseurl}}/{{site.data.sobre.imagens_presente}}" alt="presente" class="sobre-img mb-2">
         </div>
-        <div class="separator my-4"></div>
+        <div class="separator-mobile my-4"></div>
         <h4 class="futuro-title sobre-title">FUTURO</h4>
         <div class="futuro-text sobre-text">
             {{ site.data.sobre.futuro}}
@@ -99,22 +99,96 @@ stills:
                 {% endfor %}
             </div>
         </div>
-        <div class="separator my-4"></div>
+        <div class="separator-mobile my-4"></div>
     </div>
 
     <div id="contactos" class="lightbox-content">
-        {{ site.data.contactos.email }}
-        {{ site.data.contactos.telefone_susana }}
-        {{ site.data.contactos.telefone_cristina }}
-        {{ site.data.contactos.morada }}
+        <div class="d-lg-flex">
+            <div class="mx-lg-3 me-lg-5">
+                <h6 class="subtitle">LOCALIZAÇÃO</h6>
+                <div class="separator"></div>
+                <div class="my-3">
+                    <a href="https://goo.gl/maps/BV1xzJMeM5bZZnDeA" target="_blank">{{ site.data.contactos.morada }}</a> 
+                    <a href="https://goo.gl/maps/BV1xzJMeM5bZZnDeA" target="_blank"><img src="{{ site.baseurl }}/assets/img/map.jpg" alt="map" class="map desktop"></a>
+                </div>
+            </div>
+            <div class="mx-lg-5">
+                <h6 class="subtitle">CONTACTOS</h6>
+                <div class="separator"></div>
+                <div class="my-3">
+                    <div>Para questões e reservas entrar em contacto pelas seguintes vias:</div><br>
+                    <a href="mailto:{{site.data.contactos.email}}">Email - <u>{{ site.data.contactos.email }}</u></a><br>
+                    <a href="tel:{{site.data.contactos.telefone_susana}}">Susana Pimenta - <u>{{ site.data.contactos.telefone_susana }}</u></a><br>
+                    <a href="tel:{{site.data.contactos.telefone_cristina}}">Cristina Pimenta - <u>{{ site.data.contactos.telefone_cristina }}</u></a><br><br>
+                    <div>Alternativamente, reserve diretamente <u>aqui</u>. Ou encontre-nos no Airbnb.</div>
+                </div>
+                <h6 class="subtitle mt-lg-5">REDES SOCIAIS</h6>
+                <div class="separator"></div>
+                <div class="my-3">
+                    <a href="https://www.instagram.com/quintavfranca/"><u>Instagram</u></a> / <a href="https://www.facebook.com/quintadevillafranca"><u>Facebook</u></a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="detalhes" class="lightbox-content">
-        <div>Detalhes</div>
-        {{site.data.detalhes.description}}
-        {{site.data.detalhes.geral}}
-        {{site.data.detalhes.cozinha}}
-        {{site.data.detalhes.exterior}}
+<div id="detalhes" class="lightbox-content">
+    <div class="d-lg-flex justify-content-between smaller-font">
+        <div class="d-flex flex-column mx-3">
+            <h6 class="subtitle">Casa de férias no centro da cidade do Peso da Régua</h6>
+            <div class="separator"></div>
+            <div class="my-3">
+                <div class="underline">7 Quartos:</div>
+                <div class="ms-2">4 Quartos com Cama de Casal</div>
+                <div class="ms-2">2 Quartos com 2 Camas Individuais</div>
+                <div class="ms-2">1 Quarto com 1 Cama Individual</div>
+                <div>3 Casas-de-Banho</div>
+                <div>1 Sala de Estar</div>
+                <div>1 Sala de Jantar</div>
+            </div>
+            <h6 class="subtitle">Geral</h6>
+            <div class="separator"></div>
+            <div class="my-3">
+                {% for item in site.data.detalhes.geral %}
+                <div>{{item}}</div>
+                {% endfor %}
+            </div>   
+        </div>
+        <div class="d-flex flex-column mx-3">
+            <h6 class="subtitle">Exterior</h6>
+            <div class="separator"></div>
+            <div class="my-3">
+                {% for item in  site.data.detalhes.exterior %}
+                <div>{{item}}</div>
+                {% endfor %}
+            </div>
+            <h6 class="subtitle">Cozinha</h6>
+            <div class="separator"></div>
+            <div class="my-3">
+                {% for item in site.data.detalhes.cozinha %}
+                <div>{{item}}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="d-flex flex-column mx-3">
+            <h6 class="subtitle">Extras</h6>
+            <div class="separator"></div>
+            <div class="my-3">
+                {% for item in site.data.detalhes.extras %}
+                <div>{{item}}</div>
+                {% endfor %}
+                <br>
+                <i>*valor extra adicional à reserva</i>
+            </div>
+            <h6 class="subtitle">Atividades</h6>
+            <div class="separator"></div>
+            <div class="my-3">
+                <div>→ Provas de Vinho</div>
+                <div>→ Restaurantes</div>
+                <div>→ Aldeias Próximas</div>
+                <div>→ <a href="https://douroavela.pt/sobre">Passeios de Barco</a></div>
+                <div>→ <a href="https://www.cp.pt/passageiros/en/how-to-travel/For-leisure/Nature-and-Culture/douro-historical-train">Viagem de Comboio</a></div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -156,6 +230,7 @@ $('.photo-carousel').flickity({
     pageDots: false,
     wrapAround: true,
     prevNextButtons: true,
+    imagesLoaded: true,
     arrowShape: { 
         x0: 10,
         x1: 60, y1: 50,
@@ -170,5 +245,13 @@ $('.button--next-wrapped').on( 'click', function() {
 });
 $('.button--previous-wrapped').on( 'click', function() {
     $carousel.flickity( 'previous', true );
+});
+
+const key='5ZFReRqYTI9IcHosddlG';
+const map = new maplibregl.Map({
+    container: 'map', // container id
+    style: `https://api.maptiler.com/maps/streets/style.json?key=${key}`, // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
 });
 </script>
