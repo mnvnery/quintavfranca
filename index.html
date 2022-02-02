@@ -33,6 +33,7 @@ stills:
 - assets/img/img2.jpeg
 
 ---
+<div id="fader">
 <div class="logo mobile">
     <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
 </div>
@@ -51,7 +52,7 @@ stills:
         <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
     </div>
     <a href="#contactos" class="nav-title"><h6>CONTACTOS</h6></a>
-    <h6>RESERVAS</h6>
+    <a href="{{ site.baseurl }}/booking"><h6>RESERVAS</h6></a>
 </div>
 
 <div class="photo-carousel">
@@ -108,7 +109,7 @@ stills:
                 <h6 class="subtitle">LOCALIZAÇÃO</h6>
                 <div class="separator"></div>
                 <div class="my-3">
-                    <a href="https://goo.gl/maps/BV1xzJMeM5bZZnDeA" target="_blank">{{ site.data.contactos.morada }}</a> 
+                    {{ site.data.contactos.morada }}
                     <a href="https://goo.gl/maps/BV1xzJMeM5bZZnDeA" target="_blank"><img src="{{ site.baseurl }}/assets/img/map.jpg" alt="map" class="map desktop"></a>
                 </div>
             </div>
@@ -191,7 +192,7 @@ stills:
         </div>
     </div>
 </div>
-
+</div>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>
 $('.nav-title').click(function(e) {
