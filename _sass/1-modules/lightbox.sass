@@ -8,7 +8,7 @@
     transition-timing-function: ease-in-out
 
 .open
-    height: 75vh
+    height: 70%
     transition: 0.5s
     transition-timing-function: ease-in-out
 
@@ -22,6 +22,7 @@
     height: 65vh
     overflow-y: scroll
     width: 88%
+    overflow-x: hidden
 
 .sobre-text
     display: none
@@ -47,7 +48,6 @@
 
 
 .subtitle 
-    font-weight: bold
     text-transform: uppercase
     margin-bottom: 1vh
 
@@ -70,9 +70,14 @@
         display: block
 
     .sobre-img-double
-        width: 89vw
+        width: 100%
 
+    .sobre-img 
+        width: 100%
 @media screen and (min-width: 600px) 
+    .open 
+        height: 75vh
+
     .show
         display: flex
         flex-direction: column
