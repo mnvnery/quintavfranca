@@ -10,4 +10,4 @@ fields:
   name: stills
   label: stills
 pages:
-- index.html
+- home.html
