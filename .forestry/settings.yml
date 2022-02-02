@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: index.html
+  path: home.html
   label: Gallery
 - type: document
   path: _data/sobre.yml
