@@ -5,7 +5,6 @@
     justify-content: center
     align-items: center
     height: 100vh
-    margin: 20px
 
 .landing-logo
     max-width: 450px
@@ -16,4 +15,20 @@
     height: 100vh
     object-fit: cover
     z-index: -1
+
+
+.fade-in 
+    animation: fadeIn ease 7s
+    -webkit-animation: fadeIn ease 7s
+
+@keyframes fadeIn 
+    0% 
+        opacity: 0
+    
+    100% 
+        opacity: 1
+
+#fader
+    animation: fadeIn 1s
+
 
