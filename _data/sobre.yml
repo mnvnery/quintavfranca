@@ -14,14 +14,11 @@ presente: "<p>A Cristina e a Susana recebem a QFV no seu património com a casa 
   para a família.</p><p>Assim, por iniciativa de ambas a QVF desde 2021 começou a
   estar aberta a todos os que queiram conhecer a região e explorar a natureza tão
   especial do Douro e ao mesmo tempo passar uns dias de descanso num lugar com um
-  ambiente muito tranquilo e familiar.</p><p>O projeto de partilha ao público da QVF
-  é um arranque para um futuro em que se pretende fomentar uma ligação mais estreita
-  dos membros desta família à natureza, ao interior de Portugal e à região do Douro.
-  Surgem novos desafios e muitas novidades a apresentar em breve.</p>"
+  ambiente muito tranquilo e familiar.</p>"
 futuro: "<p>O projeto de partilha ao público da QVF é um arranque para um futuro em
-  que se pretende fomentar uma ligação mais estreita das pessoas desta família à natureza,
-  ao interior e à região do Douro. Surgem novos desafios e muitas novidades a apresentar
-  em breve.</p>"
+  que se pretende fomentar uma ligação mais estreita dos membros desta família à natureza,
+  ao interior de Portugal e à região do Douro. Surgem novos desafios e muitas novidades
+  a apresentar em breve.</p>"
 imagens_lugar:
 - assets/img/scan-2.png
 imagens_passado:
@@ -46,5 +43,11 @@ past: "<p>Since 1709, QVF has welcomed several generations of our family. The ma
 present: "<p>Cristina and Susana welcome QFV in their estate with a very well-preserved
   house and a small vineyard. As the difficulties affecting small wine growers in
   the Douro are well known, viticulture is now an activity of residual dimension for
-  the family.</p><p></p>"
-future: ''
+  the family.</p><p>Thus, since 2021, in a common effort, QVF started to be open to
+  everyone who wants to get to know the region and explore the very special nature
+  of the Douro region, and at the same time, spend a few days of rest in a place with
+  a very quiet and familiar environment.</p>"
+future: "<p>The project to open and share QVF to the public is a fresh start to a
+  future in which we intend to foster a closer connection by the members of this family
+  to the nature, the countryside interior of Portugal and to the Douro region. There
+  are new challenges ahead and many news to be presented soon.</p>"
