@@ -11,6 +11,15 @@ fields:
     schema:
       format: html-blocks
   label: Descrição
+- name: description_eng
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
 - name: cozinha
   type: list
   config:
@@ -18,6 +27,13 @@ fields:
     min: 
     max: 
   label: Cozinha
+- name: kitchen
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Kitchen
 - name: geral
   type: list
   config:
@@ -25,6 +41,13 @@ fields:
     min: 
     max: 
   label: Geral
+- name: general_information
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: General Information
 - name: exterior
   type: list
   config:
@@ -32,7 +55,21 @@ fields:
     min: 
     max: 
   label: Exterior
+- name: exterior_eng
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Exterior Eng
 - name: extras
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Extras
+- name: extras_eng
   type: list
   config:
     use_select: false
@@ -48,5 +85,14 @@ fields:
     schema:
       format: html-blocks
   label: Atividades
+- name: activities
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Activities
 pages:
 - _data/detalhes.yml
