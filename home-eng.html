@@ -35,24 +35,24 @@ stills:
 ---
 <div id="fader">
 <div class="logo mobile">
-    <a href="{{ site.baseurl }}/home"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
+    <a href="{{ site.baseurl }}/home-eng"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
 </div>
 
 <div class="separator-mobile my-4"></div>
 
 <div class="languages">
-    <a href="{{ site.baseurl }}/home-eng"><h6 class="en">EN</h6></a>
-    <a href="{{ site.baseurl }}/home"><h6 class="pt underline">PT</h6></a>
+    <a href="{{ site.baseurl }}/home-eng"><h6 class="en underline">EN</h6></a>
+    <a href="{{ site.baseurl }}/home"><h6 class="pt">PT</h6></a>
 </div>
 
 <div class="d-flex justify-content-between align-items-center m-3 navbar">
-    <a href="#sobre" class="nav-title"><h6>SOBRE</h6></a>
-    <a href="#detalhes" class="nav-title"><h6>DETALHES</h6></a>
+    <a href="#sobre" class="nav-title"><h6>ABOUT</h6></a>
+    <a href="#detalhes" class="nav-title"><h6>DETAILS</h6></a>
     <div class="logo desktop">
-        <a href="{{ site.baseurl }}/home"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
+        <a href="{{ site.baseurl }}/home-eng"><img src="{{ site.baseurl }}/assets/img/logo-black.svg" alt="logo"></a>
     </div>
-    <a href="#contactos" class="nav-title"><h6>CONTACTOS</h6></a>
-    <a href="{{ site.baseurl }}/booking"><h6>RESERVAS</h6></a>
+    <a href="#contactos" class="nav-title"><h6>CONTACTS</h6></a>
+    <a href="{{ site.baseurl }}/booking"><h6>BOOK NOW</h6></a>
 </div>
 
 <div class="photo-carousel">
@@ -69,15 +69,15 @@ stills:
 <div class="lightbox">
     <div class="btn-close lightbox-close float-end m-3"></div>
     <div id="sobre" class="sobre-menu lightbox-content">
-        <h4 class="lugar-title sobre-title underline">O LUGAR</h4>
+        <h4 class="lugar-title sobre-title underline">THE PLACE</h4>
         <div class="lugar-text sobre-text show">
-            {{ site.data.sobre.lugar}}
+            {{ site.data.sobre.place}}
             <img src="{{site.baseurl}}/{{site.data.sobre.imagens_lugar}}" alt="lugar" class="sobre-img mb-2">
         </div>
         <div class="separator-mobile my-4"></div>
-        <h4 class="passado-title sobre-title">PASSADO</h4>
+        <h4 class="passado-title sobre-title">PAST</h4>
         <div class="passado-text sobre-text">
-            {{ site.data.sobre.passado}}
+            {{ site.data.sobre.past}}
             <div class="double-img">
                 {% for img in site.data.sobre.imagens_passado %}
                 <img src="{{site.baseurl}}/{{img}}" alt="passado" class="sobre-img-double mb-2">
@@ -85,15 +85,15 @@ stills:
             </div>
         </div>
         <div class="separator-mobile my-4"></div>
-        <h4 class="presente-title sobre-title">PRESENTE</h4>
+        <h4 class="presente-title sobre-title">PRESENT</h4>
         <div class="presente-text sobre-text">
-            {{ site.data.sobre.presente}}
+            {{ site.data.sobre.present}}
             <img src="{{site.baseurl}}/{{site.data.sobre.imagens_presente}}" alt="presente" class="sobre-img mb-2">
         </div>
         <div class="separator-mobile my-4"></div>
-        <h4 class="futuro-title sobre-title">FUTURO</h4>
+        <h4 class="futuro-title sobre-title">FUTURE</h4>
         <div class="futuro-text sobre-text">
-            {{ site.data.sobre.futuro}}
+            {{ site.data.sobre.future}}
             <div class="double-img w-100 d-flex flex-wrap">
                 {% for img in site.data.sobre.imagens_futuro %}
                 <img src="{{site.baseurl}}/{{img}}" alt="futuro" class="futuro-img mb-2">
@@ -106,24 +106,24 @@ stills:
     <div id="contactos" class="lightbox-content">
         <div class="d-lg-flex">
             <div class="mx-lg-3 me-lg-5">
-                <h6 class="subtitle">LOCALIZAÇÃO</h6>
+                <h6 class="subtitle">LOCATION</h6>
                 <div class="separator"></div>
                 <div class="my-3">
-                    {{ site.data.contactos.morada }}
+                    {{ site.data.contactos.address }}
                     <a href="https://goo.gl/maps/BV1xzJMeM5bZZnDeA" target="_blank"><img src="{{ site.baseurl }}/assets/img/map.jpg" alt="map" class="map desktop"></a>
                 </div>
             </div>
             <div class="mx-lg-5">
-                <h6 class="subtitle">CONTACTOS</h6>
+                <h6 class="subtitle">CONTACTS</h6>
                 <div class="separator"></div>
                 <div class="my-3">
-                    <div>Para questões e reservas entrar em contacto pelas seguintes vias:</div><br>
+                    <div>Para questions and reservations get in touch through the following channels:</div><br>
                     <a href="mailto:{{site.data.contactos.email}}">Email - <u>{{ site.data.contactos.email }}</u></a><br>
                     <a href="tel:{{site.data.contactos.telefone_susana}}">Susana Pimenta - <u>{{ site.data.contactos.telefone_susana }}</u></a><br>
                     <a href="tel:{{site.data.contactos.telefone_cristina}}">Cristina Pimenta - <u>{{ site.data.contactos.telefone_cristina }}</u></a><br><br>
-                    <div>Alternativamente, reserve diretamente <u>aqui</u>. Ou encontre-nos no Airbnb.</div>
+                    <div>Alternatively, book <u>here</u> directly. Or find us on Airbnb.</div>
                 </div>
-                <h6 class="subtitle mt-lg-5">REDES SOCIAIS</h6>
+                <h6 class="subtitle mt-lg-5">SOCIALS</h6>
                 <div class="separator"></div>
                 <div class="my-3">
                     <a href="https://www.instagram.com/quintavfranca/"><u>Instagram</u></a> / <a href="https://www.facebook.com/quintadevillafranca"><u>Facebook</u></a>
@@ -135,21 +135,21 @@ stills:
 <div id="detalhes" class="lightbox-content">
     <div class="d-lg-flex justify-content-between smaller-font">
         <div class="d-flex flex-column mx-3">
-            <h6 class="subtitle">Casa de férias no centro da cidade do Peso da Régua</h6>
+            <h6 class="subtitle">VACATION HOUSE IN THE HEART OF THE CITY OF PESO DA RÉGUA</h6>
             <div class="separator"></div>
             <div class="my-3">
-                <div class="underline">7 Quartos:</div>
-                <div class="ms-2">4 Quartos com Cama de Casal</div>
-                <div class="ms-2">2 Quartos com 2 Camas Individuais</div>
-                <div class="ms-2">1 Quarto com 1 Cama Individual</div>
-                <div>3 Casas-de-Banho</div>
-                <div>1 Sala de Estar</div>
-                <div>1 Sala de Jantar</div>
+                <div class="underline">7 Rooms:</div>
+                <div class="ms-2">4 Double Bedrooms</div>
+                <div class="ms-2">2 Twin Bedrooms</div>
+                <div class="ms-2">1 Single Bedroom</div>
+                <div>3 Bathrooms</div>
+                <div>1 Living Room</div>
+                <div>1 Dining Rooms</div>
             </div>
-            <h6 class="subtitle">Informação Geral</h6>
+            <h6 class="subtitle">General Information</h6>
             <div class="separator"></div>
             <div class="my-3">
-                {% for item in site.data.detalhes.geral %}
+                {% for item in site.data.detalhes.general_information %}
                 <div>{{item}}</div>
                 {% endfor %}
             </div>   
@@ -158,14 +158,14 @@ stills:
             <h6 class="subtitle">Exterior</h6>
             <div class="separator"></div>
             <div class="my-3">
-                {% for item in  site.data.detalhes.exterior %}
+                {% for item in  site.data.detalhes.exterior_eng %}
                 <div>{{item}}</div>
                 {% endfor %}
             </div>
-            <h6 class="subtitle">Cozinha</h6>
+            <h6 class="subtitle">Kitchen</h6>
             <div class="separator"></div>
             <div class="my-3">
-                {% for item in site.data.detalhes.cozinha %}
+                {% for item in site.data.detalhes.kitchen %}
                 <div>{{item}}</div>
                 {% endfor %}
             </div>
@@ -174,21 +174,21 @@ stills:
             <h6 class="subtitle">Extras</h6>
             <div class="separator"></div>
             <div class="my-3">
-                {% for item in site.data.detalhes.extras %}
+                {% for item in site.data.detalhes.extras_eng %}
                 <div>{{item}}</div>
                 {% endfor %}
                 <br>
             </div>
-            <h6 class="subtitle">Algumas Atividades</h6>
+            <h6 class="subtitle">Some Activities</h6>
             <div class="separator"></div>
             <div class="my-3">
-                <div>→ Provas de Vinho</div>
+                <div>→ Wine Tasting</div>
                 <div>→ Local Gastronomy</div>
-                <div>→ Visita a aldeias cidades próximas</div>
-                <div>→ Acesso fácil às melhores vistas do Douro</div>
-                <div>→ Visita a vinhas próximas da QVF</div>
-                <div>→ <a href="https://douroavela.pt/sobre">Passeios de Barco</a></div>
-                <div>→ <a href="https://www.cp.pt/passageiros/en/how-to-travel/For-leisure/Nature-and-Culture/douro-historical-train">Viagem de Comboio</a></div>
+                <div>→ Visit to villages and nearby towns</div>
+                <div>→ Easy access to the best views of the Douro</div>
+                <div>→ Visit to nearby vineyards</div>
+                <div>→ <a href="https://douroavela.pt/sobre">Boat Tours</a></div>
+                <div>→ <a href="https://www.cp.pt/passageiros/en/how-to-travel/For-leisure/Nature-and-Culture/douro-historical-train">Train Trips</a></div>
             </div>
         </div>
     </div>
