@@ -97,4 +97,6 @@ li p { margin-bottom: 0.3em; }
 
 #fader { animation: fadeIn 1s; }
 
+@media screen and (max-width: 600px) { .landing-logo { max-width: 335px; } .detalhes-last { margin-bottom: 10vh !important; } }
+
 /*# sourceMappingURL=styles.css.map */
