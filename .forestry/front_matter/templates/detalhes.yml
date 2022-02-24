@@ -94,5 +94,9 @@ fields:
     schema:
       format: html-blocks
   label: Activities
+- name: test
+  type: field_group
+  config: {}
+  label: Test
 pages:
 - _data/detalhes.yml
