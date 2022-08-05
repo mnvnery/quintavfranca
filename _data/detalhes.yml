@@ -1,8 +1,7 @@
 ---
-description: <p class="underline">7 quartos:</p><ul><li><p>4 quartos com cama de casal</p></li><li><p>2
-  quartos com 2 camas individuais </p></li><li><p>1 quarto com 1 cama individual</p></li></ul><p
-  class="p1">3 casas-de-banho</p><p class="p1">1 Sala de estar</p><p class="p1">1
-  Sala de jantar</p>
+description: <p class="underline">7 quartos:</p><ul><li><p>6 quartos com cama de casal</p></li><li><p>1
+  quartos com 2 camas individuais</p></li></ul><p class="p1">3 casas-de-banho</p><p
+  class="p1">1 Sala de estar</p><p class="p1">1 Sala de jantar</p>
 cozinha:
 - Outros pequenos eletrodomésticos
 - 'Máquina de Café '
@@ -69,3 +68,4 @@ activities: <p>→ Wine tasting</p><p>→ Local Gastronomy</p><p>→ Visit to vi
   nearby vineyards</p><p>→ <a href="https://douroavela.pt/sobre" title="">Boat tours</a></p><p>→
   <a href="https://www.cp.pt/passageiros/en/how-to-travel/For-leisure/Nature-and-Culture/douro-historical-train"
   title="">Train trips</a></p>
+test: {}
