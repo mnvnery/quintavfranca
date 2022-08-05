@@ -1,7 +1,7 @@
 ---
-description: <p class="underline">7 quartos:</p><ul><li><p>6 quartos com cama de casal</p></li><li><p>1
-  quartos com 2 camas individuais</p></li></ul><p class="p1">3 casas-de-banho</p><p
-  class="p1">1 Sala de estar</p><p class="p1">1 Sala de jantar</p>
+description: <p class="underline">7 quartos:</p><p>- 6 quartos com cama de casal</p><p>-1
+  quarto com 2 camas individuais</p><p class="p1">3 casas-de-banho</p><p class="p1">1
+  Sala de estar</p><p class="p1">1 Sala de jantar</p>
 cozinha:
 - Outros pequenos eletrodomésticos
 - 'Máquina de Café '
@@ -18,24 +18,23 @@ geral:
 - Wifi
 extras:
 - Entrega diária de pão fresco a pedido
-- Para reservas de mais de uma semana fornecemos mudança de roupa de cama e de banho
+- Em reservas de 7 noites ou mais - fornecemos mudança  de roupa de banho
 exterior:
 - Estacionamento para 6 carros e acesso através de portão automático
 - Jardins com relva
-- Grelhador
+- Grelhador de jardim
 - Cozinha de apoio com frigorífico
 - Áreas com sombra para refeições
 - Espreguiçadeiras e mobiliário de exterior
 - Duas varandas
 - Piscina
 atividades: <p>→ Provas de vinho</p><p>→ Gastronomia Local</p><p>→ Visita a aldeias
-  cidades próximas</p><p>→ Acesso fácil às melhores vistas do Douro</p><p>→ Visita
+  e cidades próximas</p><p>→ Acesso fácil às melhores vistas do Douro</p><p>→ Visita
   a vinhas próximas da QVF</p><p>→ <a href="https://douroavela.pt/sobre" title="">Passeios
   de barco</a></p><p>→ <a href="https://www.cp.pt/passageiros/en/how-to-travel/For-leisure/Nature-and-Culture/douro-historical-train"
   title="">Viagem de comboio</a></p>
-description_eng: <p>7 rooms:</p><ul><li><p>4 Double Bedrooms</p></li><li><p>2 Twin
-  Bedrooms</p></li><li><p>1 Single Bedroom</p></li></ul><p class="p1">3 bathrooms</p><p>1
-  living room</p><p>1 dining room</p>
+description_eng: <p>7 rooms:</p><p>-  6 Double Bedrooms</p><p>- 1 Bedroom with 2 single
+  beds</p><p class="p1">3 bathrooms</p><p>1 living room</p><p>1 dining room</p>
 kitchen:
 - Other small electric devices
 - Coffee Machine
@@ -53,7 +52,7 @@ general_information:
 exterior_eng:
 - Parking area (up to 6 cars) with acess through electric gate
 - Grass garden area
-- Grill
+- Barbecue
 - Small kitchen to support outside meals
 - Shaded areas for meals
 - Sun loungers and outdoor furniture
