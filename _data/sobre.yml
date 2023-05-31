@@ -1,53 +1,60 @@
----
-lugar: "<p>Situada no centro do Peso da Régua, a Quinta de Villa Franca ('QVF') é
-  um lugar que combina a proximidade da região do Douro Vinhateiro com a acessibilidade
-  e facilidades que dispõe a cidade do Peso da Régua. Ainda que no centro da cidade
-  aqui poderá encontrar um lugar tranquilo para dias de descanso e onde o tempo parece
-  sempre passar mais devagar.</p>"
-passado: "<p>A QVF acolhe desde 1909 as várias gerações a nossa família. A maior atividade
-  desta quinta foi sempre a viticultura e a consequente produção de vinho do Porto
-  para as grandes casas da região.</p><p>Em 1968 o interior da casa principal é renovado
-  e é construída uma adega moderna pelo arquiteto Jorge Gigante (1919-1994).</p>"
-presente: "<p>A Cristina e a Susana recebem a QFV no seu património com a casa muito
-  bem preservada e uma pequena vinha. Sendo conhecidas as dificuldades que afetam
-  os pequenos viticultores do Douro, a viticultura tem atualmente uma dimensão residual
-  para a família.</p><p>Assim, por iniciativa de ambas a QVF desde 2021 começou a
-  estar aberta a todos os que queiram conhecer a região e explorar a natureza tão
-  especial do Douro e ao mesmo tempo passar uns dias de descanso num lugar com um
-  ambiente muito tranquilo e familiar.</p>"
-futuro: "<p>O projeto de partilha ao público da QVF é um arranque para um futuro em
-  que se pretende fomentar uma ligação mais estreita dos membros desta família à natureza,
-  ao interior de Portugal e à região do Douro. Surgem novos desafios e muitas novidades
-  a apresentar em breve.</p>"
+lugar: Situada no centro do Peso da Régua, a Quinta de Villa Franca ('QVF') é um
+  lugar que combina a proximidade da região do Douro Vinhateiro com a
+  acessibilidade e facilidades que dispõe a cidade do Peso da Régua. Ainda que
+  no centro da cidade aqui poderá encontrar um lugar tranquilo para dias de
+  descanso e onde o tempo parece sempre passar mais devagar.
+place: Quinta de Villa Franca ('QVF') is located in the heart of Peso da Régua.
+  This location site is one of the most important areas of the Douro Valley wine
+  region, a characteristic to which we may add a great proximity of all the
+  facilities offered by the city of Peso da Régua. Although in the center of the
+  city, in our house you’ll find a quiet place to spend restful days where time
+  always seems to move more slowly.
 imagens_lugar:
-- assets/img/scan-2.png
+  - assets/img/scan-2.png
+passado: >-
+  A QVF acolhe desde 1909 as várias gerações a nossa família. A maior atividade
+  desta quinta foi sempre a viticultura e a consequente produção de vinho do
+  Porto para as grandes casas da região.
+
+
+  Em 1968 o interior da casa principal é renovado e é construída uma adega moderna pelo arquiteto Jorge Gigante (1919-1994).
+past: >-
+  Since 1709, QVF has welcomed several generations of our family. The main
+  activity of this farm has always been the viticulture and the consequent
+  production of Port wine for the great houses of the region.
+
+
+  In 1968 the interior of the main house is renovated and a modern winery is built by the architect Jorge Gigante (1919-1994).
 imagens_passado:
-- assets/img/scan-4.png
-- assets/img/scan-3.png
+  - assets/img/scan-4.png
+  - assets/img/scan-3.png
+presente: >-
+  A Cristina e a Susana recebem a QFV no seu património com a casa muito bem
+  preservada e uma pequena vinha. Sendo conhecidas as dificuldades que afetam os
+  pequenos viticultores do Douro, a viticultura tem atualmente uma dimensão
+  residual para a família.
+
+
+  Assim, por iniciativa de ambas a QVF desde 2021 começou a estar aberta a todos os que queiram conhecer a região e explorar a natureza tão especial do Douro e ao mesmo tempo passar uns dias de descanso num lugar com um ambiente muito tranquilo e familiar.</p>
+present: >-
+  Cristina and Susana welcome QFV in their estate with a very well-preserved
+  house and a small vineyard. As the difficulties affecting small wine growers
+  in the Douro are well known, viticulture is now an activity of residual
+  dimension for the family.
+
+
+  Thus, since 2021, in a common effort, QVF started to be open to everyone who wants to get to know the region and explore the very special nature of the Douro region, and at the same time, spend a few days of rest in a place with a very quiet and familiar environment.
 imagens_presente:
-- assets/img/scan-6.png
+  - assets/img/scan-6.png
+futuro: O projeto de partilha ao público da QVF é um arranque para um futuro em
+  que se pretende fomentar uma ligação mais estreita dos membros desta família à
+  natureza, ao interior de Portugal e à região do Douro. Surgem novos desafios e
+  muitas novidades a apresentar em breve.
+future: The project to open and share QVF to the public is a fresh start to a
+  future in which we intend to foster a closer connection by the members of this
+  family to the nature, the countryside interior of Portugal and to the Douro
+  region. There are new challenges ahead and many news to be presented soon.
 imagens_futuro:
-- assets/img/1.png
-- assets/img/2.png
-- assets/img/3.png
-place: "<p>Quinta de Villa Franca ('QVF') is located in the heart of Peso da Régua.
-  This location site is one of the most important areas of the Douro Valley wine region,
-  a characteristic to which we may add a great proximity of all the facilities offered
-  by the city of Peso da Régua. Although in the center of the city, in our house you’ll
-  find a quiet place to spend restful days where time always seems to move more slowly.</p>"
-past: "<p>Since 1709, QVF has welcomed several generations of our family. The main
-  activity of this farm has always been the viticulture and the consequent production
-  of Port wine for the great houses of the region.</p><p>In 1968 the interior of the
-  main house is renovated and a modern winery is built by the architect Jorge Gigante
-  (1919-1994).</p>"
-present: "<p>Cristina and Susana welcome QFV in their estate with a very well-preserved
-  house and a small vineyard. As the difficulties affecting small wine growers in
-  the Douro are well known, viticulture is now an activity of residual dimension for
-  the family.</p><p>Thus, since 2021, in a common effort, QVF started to be open to
-  everyone who wants to get to know the region and explore the very special nature
-  of the Douro region, and at the same time, spend a few days of rest in a place with
-  a very quiet and familiar environment.</p>"
-future: "<p>The project to open and share QVF to the public is a fresh start to a
-  future in which we intend to foster a closer connection by the members of this family
-  to the nature, the countryside interior of Portugal and to the Douro region. There
-  are new challenges ahead and many news to be presented soon.</p>"
+  - assets/img/1.png
+  - assets/img/2.png
+  - assets/img/3.png
