@@ -1,0 +1,99 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "assets/img"
+
+collections:
+  - name: 'paginas'
+    label: 'Páginas Fuso'
+    editor:
+      preview: false
+    files:
+      - label: 'Galeria'
+        name: 'galeria'
+        file: 'home.html'
+        fields: 
+          - label: 'stills'
+            name: stills
+            widget: image
+            media_library:
+              config:
+                multiple: true
+      - label: 'Sobre'
+        name: 'sobre'
+        file: '_data/sobre.yml'
+        fields: 
+          - {label: 'Lugar', name: lugar, widget: markdown, modes: [rich_text]}
+          - {label: 'The Place', name: place, widget: markdown, modes: [rich_text]}
+          - label: 'Imagens Lugar'
+            name: imagens_lugar
+            widget: image
+            media_library:
+              config:
+                multiple: true
+          - {label: 'Passado', name: passado, widget: markdown, modes: [rich_text]}
+          - {label: 'Past', name: past, widget: markdown, modes: [rich_text]}
+          - label: 'Imagens Passado'
+            name: imagens_passado
+            widget: image
+            media_library:
+              config:
+                multiple: true
+          - {label: 'Presente', name: presente, widget: markdown, modes: [rich_text]}
+          - {label: 'Present', name: present, widget: markdown, modes: [rich_text]}
+          - label: 'Imagens Presente'
+            name: imagens_presente
+            widget: image
+            media_library:
+              config:
+                multiple: true
+          - {label: 'Futuro', name: futuro, widget: markdown, modes: [rich_text]}
+          - {label: 'Future', name: future, widget: markdown, modes: [rich_text]}
+          - label: 'Imagens Futuro'
+            name: imagens_futuro
+            widget: image
+            media_library:
+              config:
+                multiple: true
+      - label: 'Detalhes'
+        name: 'detalhes'
+        file: '_data/detalhes.yml'
+        fields: 
+          - {label: 'Descrição', name: description, widget: markdown, modes: [rich_text]}
+          - {label: 'Description', name: description_eng, widget: markdown, modes: [rich_text]}
+          - {label: 'Cozinha', name: cozinha, widget: list}
+          - {label: 'Kitchen', name: kitchen, widget: list}
+          - {label: 'Geral', name: geral, widget: list}
+          - {label: 'General Information', name: general_Information, widget: list}
+          - {label: 'Exterior', name: exterior, widget: list}
+          - {label: 'Exterior Eng', name: exterior_eng, widget: list}
+          - {label: 'Extras', name: extras, widget: list}
+          - {label: 'Extras Eng', name: extras_eng, widget: list}
+          - {label: 'Atividades', name: atividades, widget: list}
+          - {label: 'Activities', name: activities, widget: list}
+      - label: 'Detalhes'
+        name: 'detalhes'
+        file: '_data/detalhes.yml'
+        fields: 
+          - {label: 'Descrição', name: description, widget: markdown, modes: [rich_text]}
+          - {label: 'Description', name: description_eng, widget: markdown, modes: [rich_text]}
+          - {label: 'Cozinha', name: cozinha, widget: list}
+          - {label: 'Kitchen', name: kitchen, widget: list}
+          - {label: 'Geral', name: geral, widget: list}
+          - {label: 'General Information', name: general_Information, widget: list}
+          - {label: 'Exterior', name: exterior, widget: list}
+          - {label: 'Exterior Eng', name: exterior_eng, widget: list}
+          - {label: 'Extras', name: extras, widget: list}
+          - {label: 'Extras Eng', name: extras_eng, widget: list}
+          - {label: 'Atividades', name: atividades, widget: list}
+          - {label: 'Activities', name: activities, widget: list}
+      - label: 'Contactos'
+        name: 'contactos'
+        file: '_data/contactos.yml'
+        fields: 
+          - {label: 'Email', name: email, widget: string}
+          - {label: 'Telefone Susana', name: telefone_susana, widget: string}
+          - {label: 'Telefone Cristina', name: telefone_cristina, widget: string}
+          - {label: 'Morada', name: morada, widget: markdown, modes: [rich_text]}
+          - {label: 'Address', name: address, widget: markdown, modes: [rich_text]}
