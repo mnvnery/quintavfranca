@@ -14,3 +14,15 @@ preload="auto">
         <img src="{{ site.baseurl }}/assets/img/logo-white.svg" alt="logo" class="mb-5 landing-logo">
         <a href="{{ site.baseurl }}/home"><h3 class="mt-5"><u>ENTRAR</u></h3></a>
 </div>
+
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+            window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+            });
+            }
+        });
+    }
+</script>
