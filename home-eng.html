@@ -77,7 +77,7 @@ stills:
         <div class="separator-mobile my-4"></div>
         <h4 class="passado-title sobre-title">PAST</h4>
         <div class="passado-text sobre-text">
-            {{ site.data.sobre.past}}
+            {{ site.data.sobre.past | markdownify}}
             <div class="double-img">
                 {% for img in site.data.sobre.imagens_passado %}
                 <img src="{{site.baseurl}}/{{img}}" alt="passado" class="sobre-img-double mb-2">
@@ -87,13 +87,13 @@ stills:
         <div class="separator-mobile my-4"></div>
         <h4 class="presente-title sobre-title">PRESENT</h4>
         <div class="presente-text sobre-text">
-            {{ site.data.sobre.present}}
+            {{ site.data.sobre.present | markdownify}}
             <img src="{{site.baseurl}}/{{site.data.sobre.imagens_presente}}" alt="presente" class="sobre-img mb-2">
         </div>
         <div class="separator-mobile my-4"></div>
         <h4 class="futuro-title sobre-title">FUTURE</h4>
         <div class="futuro-text sobre-text">
-            {{ site.data.sobre.future}}
+            {{ site.data.sobre.future | markdownify}}
             <div class="double-img w-100 d-flex flex-wrap">
                 {% for img in site.data.sobre.imagens_futuro %}
                 <img src="{{site.baseurl}}/{{img}}" alt="futuro" class="futuro-img mb-2">

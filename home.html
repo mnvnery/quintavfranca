@@ -68,13 +68,13 @@ stills:
     <div id="sobre" class="sobre-menu lightbox-content">
         <h4 class="lugar-title sobre-title underline">O LUGAR</h4>
         <div class="lugar-text sobre-text show">
-            {{ site.data.sobre.lugar}}
+            {{ site.data.sobre.lugar | markdownify}}
             <img src="{{site.baseurl}}/{{site.data.sobre.imagens_lugar}}" alt="lugar" class="sobre-img mb-2">
         </div>
         <div class="separator-mobile my-4"></div>
         <h4 class="passado-title sobre-title">PASSADO</h4>
         <div class="passado-text sobre-text">
-            {{ site.data.sobre.passado}}
+            {{ site.data.sobre.passado | markdownify}}
             <div class="double-img">
                 {% for img in site.data.sobre.imagens_passado %}
                 <img src="{{site.baseurl}}/{{img}}" alt="passado" class="sobre-img-double mb-2">
@@ -84,13 +84,13 @@ stills:
         <div class="separator-mobile my-4"></div>
         <h4 class="presente-title sobre-title">PRESENTE</h4>
         <div class="presente-text sobre-text">
-            {{ site.data.sobre.presente}}
+            {{ site.data.sobre.presente | markdownify}}
             <img src="{{site.baseurl}}/{{site.data.sobre.imagens_presente}}" alt="presente" class="sobre-img mb-2">
         </div>
         <div class="separator-mobile my-4"></div>
         <h4 class="futuro-title sobre-title">FUTURO</h4>
         <div class="futuro-text sobre-text">
-            {{ site.data.sobre.futuro}}
+            {{ site.data.sobre.futuro | markdownify}}
             <div class="double-img w-100 d-flex flex-wrap">
                 {% for img in site.data.sobre.imagens_futuro %}
                 <img src="{{site.baseurl}}/{{img}}" alt="futuro" class="futuro-img mb-2">
@@ -106,7 +106,7 @@ stills:
                 <h6 class="subtitle">LOCALIZAÇÃO</h6>
                 <div class="separator"></div>
                 <div class="my-3">
-                    {{ site.data.contactos.morada }}
+                    {{ site.data.contactos.morada  | markdownify}}
                     <a href="https://goo.gl/maps/BV1xzJMeM5bZZnDeA" target="_blank"><img src="{{ site.baseurl }}/assets/img/map.jpg" alt="map" class="map desktop"></a>
                 </div>
             </div>
