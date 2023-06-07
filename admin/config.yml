@@ -16,10 +16,9 @@ collections:
         fields: 
           - label: 'stills'
             name: stills
-            widget: image
-            media_library:
-              config:
-                multiple: true
+            widget: list
+            summary: '{{fields.image}}'
+            field: {label: Image, name: image, widget: image}
       - label: 'Sobre'
         name: 'sobre'
         file: '_data/sobre.yml'
